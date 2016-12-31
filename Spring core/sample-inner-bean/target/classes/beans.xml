@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean id="atmBean" class="inner_bean.ATM">
+		<property name="printer">
+			<bean class="inner_bean.Printer">
+				<property name="message"
+					value="The balance information is printed by Printer for the account number">
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+</beans>
