@@ -11,6 +11,14 @@
 					value="The balance information is printed by Printer for the account number">
 		</property>
 	</bean>
+	
+<!-- will throw error if there is more than one type Printer when using autowire by Type  -->	
+<!-- 	<bean id="printer2" class="autowire_bytype.Printer"> -->
+<!-- 		<property name="message" -->
+<!-- 					value="The balance information is printed by Printer for the account number"> -->
+<!-- 		</property> -->
+<!-- 	</bean> -->
+	
 
 	<bean id="atmBean" class="autowire_bytype.ATM" autowire="byType">		
 	</bean>
