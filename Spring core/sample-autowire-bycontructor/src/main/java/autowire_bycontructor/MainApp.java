@@ -12,3 +12,9 @@ public class MainApp {
 		obj.printBalance("12345678");
 	}
 }
+
+/*Note
+Autowire by constructor: Similar to byType, but type applies to constructor arguments. 
+If there is not exactly one bean of the constructor argument type in the container, 
+a fatal error is raised.
+*/
